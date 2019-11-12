@@ -1,0 +1,72 @@
+{
+  "cars": [
+    {
+      "id": 1,
+      "image": "https://static.rentcars.com/imagens/carros/fiat-mobi.jpg",
+      "brand": "Fiat",
+      "model": "Mobi",
+      "features": {
+        "passengers": 5,
+        "air_conditioner": "yes",
+        "car_change": "manual",
+        "doors": 2,
+        "baggage": 2,
+        "motor": 1.6
+      },
+      "rating": 9,
+      "price": 2101,
+      "location": "Curitiba"
+    },
+    {
+      "id": 2,
+      "image": "https://static.rentcars.com/imagens/carros/fiat_uno-vivace.png",
+      "brand": "Fiat",
+      "model": "Uno",
+      "features": {
+        "passengers": 5,
+        "air_conditioner": "no",
+        "car_change": "manual",
+        "doors": 2,
+        "baggage": 1,
+        "motor": 1
+      },
+      "rating": 8.9,
+      "price": 83.52,
+      "location": "Curitiba"
+    },
+    {
+      "id": 3,
+      "image": "https://static.rentcars.com/imagens/carros/hyundai_hb20.png",
+      "brand": "Hyundai",
+      "model": "HB20",
+      "features": {
+        "passengers": 5,
+        "air_conditioner": "no",
+        "car_change": "manual",
+        "doors": 4,
+        "baggage": 1,
+        "motor": 1
+      },
+      "rating": 9.1,
+      "price": 96.33,
+      "location": "Curitiba"
+    },
+    {
+      "id": 4,
+      "image": "https://static.rentcars.com/imagens/carros/vw_virtus.png",
+      "brand": "Volkswagen",
+      "model": "Virtus",
+      "features": {
+        "passengers": 5,
+        "air_conditioner": "yes",
+        "car_change": "auto",
+        "doors": 4,
+        "baggage": 2,
+        "motor": 1.5
+      },
+      "rating": 9,
+      "price": 2101,
+      "location": "Curitiba"
+    }
+  ]
+}

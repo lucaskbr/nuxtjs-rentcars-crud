@@ -12,17 +12,33 @@
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
   },
   "dependencies": {
+    "@fortawesome/fontawesome": "^1.1.8",
+    "@fortawesome/fontawesome-free-brands": "^5.0.13",
+    "@fortawesome/fontawesome-free-solid": "^5.0.13",
+    "@fortawesome/fontawesome-svg-core": "^1.2.25",
+    "@fortawesome/free-brands-svg-icons": "^5.11.2",
+    "@fortawesome/free-solid-svg-icons": "^5.11.2",
+    "@fortawesome/vue-fontawesome": "^0.1.8",
+    "@nuxtjs/axios": "^5.3.6",
+    "@nuxtjs/toast": "^3.3.0",
+    "eslint-loader": "^3.0.2",
+    "node-sass": "^4.13.0",
     "nuxt": "^2.0.0",
-    "@nuxtjs/axios": "^5.3.6"
+    "nuxt-fontawesome": "^0.4.0",
+    "sass-loader": "^8.0.0",
+    "vue-form-generator": "^2.3.4",
+    "vue-notifications": "^1.0.2",
+    "yup": "^0.27.0"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^1.0.1",
     "@nuxtjs/eslint-module": "^1.0.0",
     "babel-eslint": "^10.0.1",
     "eslint": "^6.1.0",
-    "eslint-plugin-nuxt": ">=0.4.2",
     "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-nuxt": ">=0.4.2",
     "eslint-plugin-prettier": "^3.0.1",
+    "json-server": "^0.15.1",
     "prettier": "^1.16.4"
   }
 }

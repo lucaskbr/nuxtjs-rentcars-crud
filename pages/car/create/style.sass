@@ -1,0 +1,84 @@
+#create-car
+
+  .container
+    min-height: 100vh
+    display: flex
+    justify-content: center
+    align-items: center
+
+  .content
+    background: #fff
+    border-radius: 10px
+    border: 1px solid #ffff
+    box-shadow: 0px 6px 10px #d4d4d4
+    max-width: 515px
+    padding: 30px 50px
+    width: 100%
+
+    fieldset
+      display: contents
+
+  form
+
+    label
+      font-weight: 500
+
+    .form-group
+      margin: 0 0 15px 0
+
+    input
+      &[type='text'],  &[type='number']
+        width: 100%
+        background: #efeef5
+        border-radius: 4px
+        border: 2px solid #f2f2f7
+        color: #8b93ad
+        font-size: 15px
+        height: 40px
+        padding: 0px 12px
+        transition: border-color 0.5s
+
+        &:invalid:focus
+          box-shadow: 4px 4px 10px rgba(200, 0, 0, 0.30)
+          border: 2px solid rgba(200, 0, 0, 1)
+          outline: none
+
+        &:invalid:hover
+          opacity: 1
+
+        &:valid
+          border: 2px solid rgba(63, 178, 127, 1)
+          outline: none
+
+        &:valid:focus
+          box-shadow: 4px 4px 10px rgba(63, 178, 127, 0.30)
+
+        &:valid:hover
+          opacity: 1
+
+      &[type='radio']
+        margin: 0 5px
+
+    select
+      background: #efeef5
+      padding: 9px 0
+      width: 100%
+      border: none
+      border-bottom: 1px solid #f2f2f7
+      option
+        color: black
+
+    .field-radios
+      margin: 10px 0 10px 0
+      .radio-list
+        margin: 10px 0
+        display: flex
+        align-items: center
+        label
+          padding: 0px 20px 0 0
+
+    button
+      margin: 20px 0 0 0
+
+    a
+      margin: 10px 0 0 0

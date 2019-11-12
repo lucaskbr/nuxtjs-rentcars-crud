@@ -1,0 +1,76 @@
+div .container
+  min-height: 100vh
+  width: 100%
+  display: flex
+  justify-content: center
+  align-items: center
+
+div .content
+  width: 100%
+  max-width: 900px
+
+div .submenu
+  display: flex
+  justify-content: flex-end
+  align-items: center
+
+div .card-info
+  width: 100%
+  background: #fff
+  padding: 25px 10px
+  margin: 30px 0
+  display: flex
+  flex-direction: column
+  border: 1px solid #fff
+  border-radius: 10px
+  box-shadow: 0px 6px 10px #d4d4d4
+
+div .card-header
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  padding: 0 0 12px 0
+
+  .extra-info
+    display: flex
+    justify-content: space-around
+    align-items: center
+    flex-direction: row
+    width: 100%
+    padding: 12px 0
+    border-bottom: 1px solid #eee
+
+div .card-body
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding: 5px 5px
+  ul
+    list-style-type: none
+    display: grid
+    grid-template-columns: 1fr 1fr
+
+    li
+      margin: 10px
+      text-align: start
+
+div .checkout
+  text-align: end
+
+  strong
+    font-size: 25px
+
+.feature-icon
+  color: #FBA920
+
+.remove-button
+  font-size: 20px
+  color: #eee
+  cursor: pointer
+  &:hover
+    color: #dddbdb
+
+@media (max-width: 800px)
+  .card-body
+    flex-direction: column
