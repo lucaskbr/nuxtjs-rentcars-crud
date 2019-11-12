@@ -15,7 +15,7 @@
 git clone https://github.com/lucaskbr/nuxtjs-rentcars-crud.git
 cd nuxtjs-rentcars-crud
 yarn install
-yarn start
+yarn dev
 ```
 
 ```sh
