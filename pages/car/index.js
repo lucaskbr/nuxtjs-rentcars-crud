@@ -2,6 +2,8 @@ import Logo from '~/components/Logo/Logo.vue'
 import Fas from '~/components/FontAwesomeIcon/Fas.vue'
 import Link from '~/components/Link/Link.vue'
 import Button from '~/components/Button/Button.vue'
+import toastSuccess from '~/config/Toast/Success'
+import toastError from '~/config/Toast/Error'
 
 export default {
   components: {
@@ -17,7 +19,7 @@ export default {
       featuresName: [
         'Passangers',
         'Air Conditioner',
-        'Car change',
+        'Gear',
         'Doors',
         'Baggage',
         'Motor'
@@ -38,20 +40,16 @@ export default {
       try {
         await this.$axios.delete(`/cars/${id}`)
         this.cars = this.cars.filter((c) => c.id !== id)
-        this.$toasted.show('Car was deleted', {
-          theme: 'toasted-primary',
-          position: 'top-right',
-          type: 'success',
-          duration: 5000
-        })
+        this.$toasted.show(
+          `The Car with id: ${id} was deleted from the database`,
+          toastSuccess
+        )
       } catch (e) {
         this.errors.push(e)
-        this.$toasted.show('Error on delete', {
-          theme: 'toasted-primary',
-          position: 'top-right',
-          type: 'error',
-          duration: 5000
-        })
+        this.$toasted.show(
+          'An error occurred while deleting the car',
+          toastError
+        )
       }
     }
   },

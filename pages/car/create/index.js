@@ -4,6 +4,9 @@ import Logo from '~/components/Logo/Logo.vue'
 import Button from '~/components/Button/Button.vue'
 import Link from '~/components/Link/Link.vue'
 
+import toastSuccess from '~/config/Toast/Success'
+import toastError from '~/config/Toast/Error'
+
 const schema = yup.object().shape({
   brand: yup
     .string()
@@ -15,7 +18,7 @@ const schema = yup.object().shape({
     .required(),
   passangers: yup.number().required(),
   air_conditioner: yup.string().required(),
-  car_change: yup.string().required(),
+  gear: yup.string().required(),
   doors: yup.number().required(),
   baggage: yup.number().required(),
   rating: yup.number().required(),
@@ -41,7 +44,7 @@ export default {
         model: '',
         passangers: 2,
         air_conditioner: 'No',
-        car_change: 'Manual',
+        gear: 'Manual',
         doors: 2,
         baggage: 1,
         rating: 1,
@@ -75,15 +78,15 @@ export default {
           },
           {
             type: 'radios',
-            label: 'Air conditioning',
+            label: 'Air conditioner',
             model: 'air_conditioner',
             values: ['Yes', 'No'],
             required: true
           },
           {
             type: 'radios',
-            label: 'Car change',
-            model: 'car_change',
+            label: 'Gear',
+            model: 'gear',
             values: ['Auto', 'Manual'],
             required: true
           },
@@ -153,7 +156,7 @@ export default {
         features: {
           passangers: model.passangers,
           air_conditioner: model.air_conditioner,
-          car_change: model.car_change,
+          gear: model.gear,
           doors: model.doors,
           baggage: model.baggage
         },
@@ -163,27 +166,23 @@ export default {
       }
 
       if (isValid) {
-        console.log('dsadas')
         try {
           await this.$axios.post('/cars', newModel)
           this.reset()
-          this.$toasted.show('Car was created', {
-            theme: 'toasted-primary',
-            position: 'top-right',
-            type: 'success',
-            duration: 5000
-          })
+          this.$toasted.show(
+            `The car ${model.brand} ${model.model}  was created in the database`,
+            toastSuccess
+          )
         } catch (e) {
           console.log('Error when post the data')
+          this.$toasted.show(
+            'An error occurred on saving the car in database',
+            toastError
+          )
         }
+      } else {
+        this.$toasted.show('Some field is missing in form', toastError)
       }
-
-      this.$toasted.show('Error when creating a car', {
-        theme: 'toasted-primary',
-        position: 'top-right',
-        type: 'error',
-        duration: 5000
-      })
     }
   }
 }

@@ -8,7 +8,7 @@
       "features": {
         "passengers": 5,
         "air_conditioner": "yes",
-        "car_change": "manual",
+        "gear": "manual",
         "doors": 2,
         "baggage": 2,
         "motor": 1.6
@@ -25,7 +25,7 @@
       "features": {
         "passengers": 5,
         "air_conditioner": "no",
-        "car_change": "manual",
+        "gear": "manual",
         "doors": 2,
         "baggage": 1,
         "motor": 1
@@ -42,7 +42,7 @@
       "features": {
         "passengers": 5,
         "air_conditioner": "no",
-        "car_change": "manual",
+        "gear": "manual",
         "doors": 4,
         "baggage": 1,
         "motor": 1
@@ -59,7 +59,7 @@
       "features": {
         "passengers": 5,
         "air_conditioner": "yes",
-        "car_change": "auto",
+        "gear": "auto",
         "doors": 4,
         "baggage": 2,
         "motor": 1.5
