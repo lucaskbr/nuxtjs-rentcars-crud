@@ -3,7 +3,7 @@
     <logo />
     <img src="~/assets/images/internxp.png" />
     <h2 class="title">An CRUD to present to rentcars on wednesday</h2>
-    <Link text="List cars" to="/car" classes="btn btn-default" />
+    <Link text="List cars" to="/car" classes="btn btn-default width-300" />
   </div>
 </template>
 
