@@ -22,7 +22,7 @@
     "@nuxtjs/axios": "^5.3.6",
     "@nuxtjs/toast": "^3.3.0",
     "eslint-loader": "^3.0.2",
-    "node-sass": "^4.13.0",
+    "node-sass": "^4.13.1",
     "nuxt": "^2.0.0",
     "nuxt-fontawesome": "^0.4.0",
     "sass-loader": "^8.0.0",
